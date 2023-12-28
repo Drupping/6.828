@@ -175,7 +175,9 @@ endif
 
 UEXTRA=
 ifeq ($(LAB),util)
-	UEXTRA += user/xargstest.sh
+UPROGS += \
+	$U/_sleep
+UEXTRA += user/xargstest.sh
 endif
 
 fs.img: mkfs/mkfs README $(UEXTRA) $(UPROGS)
