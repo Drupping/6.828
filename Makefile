@@ -176,7 +176,8 @@ endif
 UEXTRA=
 ifeq ($(LAB),util)
 UPROGS += \
-	$U/_sleep
+	$U/_sleep \
+	$U/_pingpong
 UEXTRA += user/xargstest.sh
 endif
 
